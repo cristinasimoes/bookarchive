@@ -1,0 +1,165 @@
+body {
+    font: 'Raleway', sans-serif;
+    text-align: center;
+    color: rgba(0,0,0,.5);
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    /* background: linear-gradient(to right,#062f3b ,#18b78a); */
+    margin-top: 0;    
+}
+
+#add {
+  min-height:650px;
+}
+#find{
+  min-height:650px;
+}
+#list {
+  min-height:650px;
+}
+
+/* NAVBAR */
+html {
+  scroll-behavior: smooth;
+}
+li{
+  list-style-type: none;
+}
+.topnav {
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  margin-top: 20px;
+}
+.topnav-right {
+float: right;
+}
+.fas, .far{
+color: rgba(0, 0, 0, 0.411);
+margin-right: 30px;
+margin-top: 10px;
+transition: all .6s ease-in-out;
+}
+.fas:hover{
+color: rgba(0, 0, 0, 0.411);
+transform: scale(1.5)   ;
+
+}
+.far:hover{
+  color: rgba(0, 0, 0, 0.774);
+  transform: scale(1.2);
+}
+
+
+
+/* HEADERS */
+h1 {
+  font: 600 3.5em 'Raleway', sans-serif;
+  text-align: center;
+  letter-spacing: .5em;   
+}
+.header2{
+  margin-top: 0;
+}
+.header3{
+  margin-top: 20px;
+}
+
+/* GRADIENTE CIRCLES */
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  transition: all .6s ease-in-out; 
+  border-radius: 50px;
+  background-color: transparent;  
+  outline: none;
+}
+input[type="color"]:hover{
+  transform: scale(1.2);
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    /* border: none; */
+    border-color: rgba(0,0,0,.5);
+    border-radius: 50px;
+    border:  2px solid  rgba(0,0,0,.5);
+}
+
+/* FORM */  
+#book-form-add input, #book-form-find input {
+    background-color:transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: rgba(0, 0, 0, 0.699);
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    border-radius: 0px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0,0,0,.5);;
+  font: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+}
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: rgba(0,0,0,.5);
+font: 'Raleway', sans-serif;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+color: rgba(0,0,0,.5);
+font: 'Raleway', sans-serif;
+} 
+button{
+  border: 1px solid rgba(0, 0, 0, 0.699);
+  border-radius: 0px;
+  color:  rgba(0, 0, 0, 0.699);
+  width: 195px;
+}
+button:hover{
+  text-decoration: underline;
+  border: 1px solid rgba(0, 0, 0, 0.699);
+  color:  rgba(0, 0, 0, 0.699);
+ 
+
+}
+button:focus {
+  border-color:  rgba(0, 0, 0, 0.699);
+  outline: none;
+  color:  rgba(0, 0, 0, 0.699);
+}
+
+button:active{
+  background-color: rgba(255, 255, 255, 0.089);
+}
+/* LIST OF BOOKS */
+th{
+  border-color:  rgba(0, 0, 0, 0.397);
+}
+td{
+  border: none;
+}
+
+/* BOX  */  
+.box{
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  margin: .5em;
+  padding: 1.5em;
+  width: 160px;
+  font-size: 9px;
+  border-width:3px;  
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+}
+table{
+  margin: auto;
+
+}

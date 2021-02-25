@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" 
+  integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- FAVICON-ICO-ERROR-->
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+
+  <title>AtelierBook8</title>
+</head>
+<body id="gradient">
+
+  <!-- NAVBAR -->
+  <div class="topnav">
+    <div class="topnav-right">
+      <li class="nav-item">
+        <a href="#add"> <i class="fas fa-plus fa-2x"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="#find"><i class="fas fa-search fa-2x"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="#list"><i class="fas fa-ellipsis-v fa-2x"></i></a>
+      </li>
+    </div>
+  </div>
+ 
+  <!-- PAGE1 -->
+  <section id="add">
+      <br><br><br><br><br><br>
+      <h1>ADD A BOOK</h1>
+
+      <!-- GRADIENT CIRCLES -->
+      <input class="colorLeft grow" type="color" >
+      <input class="colorRight grow" type="color" >
+      <br>
+
+      <!-- ALERT BOX -->
+      <ul id="alert1">
+      </ul>
+    
+      <!-- INPUT FORM - ADD BOOK-->
+      <form id="book-form-add">
+        <div>
+          <input type="text" placeholder="Title" id="title">
+        </div>
+        <div>
+          <input type="text" placeholder="Author" id="author" >
+        </div>
+        <div>
+          <input type="text" placeholder="ISBN" id="isbn" >
+        </div>  
+        <div>
+            <button id="submit">ADD</button>
+        </div>  
+      </form>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section id="find">
+    <br><br><br><br>
+
+      <h1 class="header2">FIND A BOOK</h1>
+
+      <!-- GRADIENT CIRCLES -->
+      <input class="colorLeft" type="color">
+      <input class="colorRight" type="color">
+      <br>
+
+      <!-- ALERT BOX - FIND BOOK-->
+      <ul id="alert2">
+      </ul>
+
+     <!-- INPUT FORM - FIND BOOK-->
+     <form id="book-form-find">
+      <div>
+        <input type="text" placeholder="Title" id="findTitle">
+      </div>
+      <div>
+        <input type="text" placeholder="Author" id="findAuthor" >
+      </div>
+      <div>
+        <input type="text" placeholder="ISBN" id="findIsbn" >
+      </div>  
+      <div>
+          <button id="submit">FIND</button>
+      </div>  
+    </form>
+      
+    <!-- LIST OF BOOKS -->
+    <table id="table" >
+      <thead id=theadFind>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list-find">
+      </tbody>
+    </table>
+    <br><br>
+    <div id="continue">
+      <button class="submit">Continue</button>
+    </div>  
+  </section>
+
+  <!-- PAGE 3 -->
+  <section id="list">
+    <br><br><br><br>
+
+    <h1 class="header3">LIST OF BOOKS</h1>
+
+    <!-- GRADIENT CIRCLES -->
+    <input class="colorLeft  grow" type="color">
+    <input class="colorRight  grow" type="color">
+    <br>
+
+    <!-- ALERT BOX - FIND BOOK-->
+    <ul id="alert3">
+    </ul>
+    
+  <!-- LIST OF BOOKS -->
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="book-list">
+    </tbody>
+  </table>
+</section>
+
+  <script src="app.js">
+  </script>
+</body>
+</html>
